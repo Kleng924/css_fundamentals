@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Chip Cookie Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chocolate Chip Cookie Recipe</h1>
+    </header>
+
+    <section id="recipe">
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+            <li>2 cups flour</li>
+            <li>1 cup sugar</li>
+            <li>1 cup chocolate chips</li>
+            <!-- More ingredients -->
+        </ul>
+
+        <h2>Steps</h2>
+        <ol class="steps">
+            <li>Preheat oven to 350°F (175°C).</li>
+            <li>Mix flour and sugar in a bowl.</li>
+            <li>Add chocolate chips and mix well.</li>
+            <!-- More steps -->
+        </ol>
+    </section>
+
+    <footer>
+        <p>Source: <a href="https://example.com">Example Recipe Source</a></p>
+    </footer>
+</body>
+</html>
+
+<!-- Add this button to your main HTML file -->
+<button onclick="location.href='submit-recipe.html'">Submit a Recipe</button>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Submit Your Recipe</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Recipe Name:</label>
+        <input type="text" id="name" name="recipe_name" required>
+
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="10" required></textarea>
+
+        <button type="submit">Submit Recipe</button>
+    </form>
+</body>
+</html>
+
